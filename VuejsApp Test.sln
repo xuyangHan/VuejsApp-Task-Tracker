@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "VuejsApp Test", "VuejsApp Test\VuejsApp Test.njsproj", "{F1BA2873-0290-433B-97EA-250B3F5BA01A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1BA2873-0290-433B-97EA-250B3F5BA01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BA2873-0290-433B-97EA-250B3F5BA01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BA2873-0290-433B-97EA-250B3F5BA01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BA2873-0290-433B-97EA-250B3F5BA01A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96B3CF92-E1AF-4717-9B6A-44D03D4B443D}
+	EndGlobalSection
+EndGlobal
