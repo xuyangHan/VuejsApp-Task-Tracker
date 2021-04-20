@@ -1,7 +1,11 @@
 <template>
     <header>
         <h2>{{ title }}</h2>
-        <button type="button" class="btn btn-info" @click="onClick()">Add Task</button>
+        <button
+                type="button" 
+                class="btn btn-info" 
+                @click="onClick()"
+                >Add Task</button>
     </header>
 </template>
 
@@ -14,7 +18,7 @@
         },
         methods: {
             onClick() {
-                console.log('Click')
+                this.$emit('toggle-add-task')
             },
         }
     }
