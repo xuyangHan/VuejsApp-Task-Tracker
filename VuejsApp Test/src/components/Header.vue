@@ -1,11 +1,11 @@
 <template>
     <header>
         <h2>{{ title }}</h2>
-        <button
-                type="button" 
-                class="btn btn-info" 
-                @click="onClick()"
-                >Add Task</button>
+        <button type="button"
+                :class="showAddTask ? 'btn btn-danger' : 'btn btn-info'"
+                @click="onClick()">
+            {{ showAddTask ? 'Close' : 'Add Task' }}
+        </button>
     </header>
 </template>
 
@@ -15,6 +15,7 @@
         name: 'Header',
         props: {
             title: String,
+            showAddTask: Boolean,
         },
         methods: {
             onClick() {
