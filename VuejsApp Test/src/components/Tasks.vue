@@ -1,11 +1,18 @@
 <template>
     <div>
-        <div :key="task.id" v-for="task in tasks" :class="[task.reminder ? 'reminder' : '', 'task']">
-            <h5>
-                {{ task.text }}
-                <i @click="$emit('delete-task', task.id)" class="fas fa-minus-circle"></i>
-            </h5>
-            <p>{{ task.day }}</p>
+        <div :key="task.id" v-for="task in tasks">
+            <div @toggle-reminder="$emit('toggle-reminder', task.id)"
+                 @delete-task="$emit('delete-task', task.id)"
+                 :task="task">
+                <div @dblclick="$emit('toggle-reminder', task.id)"
+                     :class="[task.reminder ? 'reminder' : '', 'task']">
+                    <h5>
+                        {{ task.text }}
+                        <i @click="$emit('delete-task', task.id)" class="fas fa-minus-circle"></i>                       
+                    </h5>
+                    <p>{{ task.day }}</p>
+                </div>
+            </div>                       
         </div>
     </div>
 </template>
@@ -15,7 +22,8 @@
         name: 'Tasks',
         props: {
             tasks: Array
-        }
+        },
+        emits: ['delete-task', 'toggle-reminder'],
     }
 </script>
 
