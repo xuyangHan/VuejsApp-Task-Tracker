@@ -1,20 +1,20 @@
 <template>
     <div class="home">
         <div class="container">
-            <Header
-                    @toggle-add-task="toggleAddTask" 
+            <Header @toggle-add-task="toggleAddTask"
                     title="Task Tracker"
-                    :showAddTask="showAddTask"
-                    />
+                    :showAddTask="showAddTask" />
             <div v-show="showAddTask">
                 <AddTask @add-task="addTask" />
             </div>
-            
+
             <Tasks @toggle-reminder="toggleReminder"
                    @delete-task="deleteTask"
                    :tasks="tasks">
             </Tasks>
         </div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
     </div>
 </template>
 
@@ -83,5 +83,52 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+    .home {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        min-height: 100vh;
+        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circle1,
+    .circle2 {
+        background: white;
+        background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3) );
+        height: 20rem;
+        width: 20rem;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    .circle1 {
+        top: 5%;
+        right: 15%;
+    }
+
+    .circle2 {
+        bottom: 5%;
+        left: 10%;
+    }
+
+    .container {
+        max-width: 800px;
+        overflow: auto;
+        min-height: 300px;        
+        padding: 30px;
+        margin-top: 30px auto;        
+
+        background: white;
+        min-height: 80vh;
+        width: 100%;
+        background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+        border-radius: 2rem;
+        z-index: 2;
+        backdrop-filter: blur(2rem);
+    }
 </style>
 

@@ -61,11 +61,15 @@
 
     .form-group label {
         display: block;
-        font-weight: bold;
+        color: #426696;
+        font-weight: 600;
+        opacity: 0.8;
     }
 
     .form-check-label {
         display: block;
-        font-weight: bold;
+        color: #426696;
+        font-weight: 600;
+        opacity: 0.8;
     }
 </style>

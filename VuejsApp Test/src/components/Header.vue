@@ -10,7 +10,6 @@
 </template>
 
 <script>
-
     export default {
         name: 'Header',
         props: {
@@ -30,6 +29,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #426696;
+        font-weight: 600;
+        font-size: 3rem;
+        opacity: 0.8;
     }
 </style>

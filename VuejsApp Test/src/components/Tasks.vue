@@ -8,7 +8,7 @@
                      :class="[task.reminder ? 'reminder' : '', 'task']">
                     <h5>
                         {{ task.text }}
-                        <i @click="$emit('delete-task', task.id)" class="fas fa-minus-circle"></i>                       
+                        &nbsp; <i @click="$emit('delete-task', task.id)" class="fas fa-minus-circle"></i>
                     </h5>
                     <p>{{ task.day }}</p>
                 </div>
@@ -33,14 +33,20 @@
     }
 
     .task {
-        background: #f4f4f4;
-        margin: 5px;
-        padding: 10px 20px;
+        
         cursor: pointer;
+
+        display: flex;
+        background: linear-gradient( to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5) );
+        border-radius: 1rem;
+        margin: 2rem 0rem;
+        padding: 2rem;
+        box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+        justify-content: space-between;
     }
 
         .task.reminder {
-            border-left: 5px solid green;
+            border-left: 5px solid #59ccb7;
         }
 
         .task h5 {
@@ -48,4 +54,14 @@
             align-items: center;
             justify-content: space-between;
         }
+    h5, p {
+        color: #426696;
+        opacity: 0.8;
+    }
+    h5 {
+        font-weight: 600;
+    }
+    p {
+        font-weight: 500;
+    }
 </style>
