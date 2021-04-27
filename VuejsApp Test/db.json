@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "vue.js tutorial",
+      "day": "2021/4/20",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "GIS Preparation",
+      "day": "2021/4/25",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Angular + .NET Core + GIS JS API",
+      "day": "2021/4/30",
+      "reminder": false
+    }
+  ]
+}
