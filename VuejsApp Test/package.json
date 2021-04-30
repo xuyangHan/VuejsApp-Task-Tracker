@@ -1,54 +1,57 @@
 {
-  "name": "vuejs-app-test",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "backend": "json-server --watch db.json --port 5000"
-  },
-  "description": "VuejsApp Test",
-  "author": {
-    "name": ""
-  },
-  "dependencies": {
-    "bootstrap": "^4.6.0",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1",
-    "vue": "2.5.17",
-    "vue-router": "^4.0.6"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "3.0.4",
-    "@vue/cli-plugin-eslint": "3.0.4",
-    "@vue/cli-service": "3.0.4",
-    "eslint": "5.6.0",
-    "eslint-plugin-vue": "4.7.1",
-    "vue-template-compiler": "2.5.17"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
+    "name": "vuejs-app-test",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build",
+        "lint": "vue-cli-service lint",
+        "backend": "json-server --watch db.json --port 5000",
+        "deploy": "gh-pages -d dist"
     },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "description": "VuejsApp Test",
+    "author": {
+        "name": ""
+    },
+    "homepage": "https://xuyanghan.github.io/VuejsApp-Task-Tracker",
+    "dependencies": {
+        "bootstrap": "^4.6.0",
+        "gh-pages": "^3.1.0",
+        "jquery": "^3.6.0",
+        "popper.js": "^1.16.1",
+        "vue": "2.5.17",
+        "vue-router": "^4.0.6"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "3.0.4",
+        "@vue/cli-plugin-eslint": "3.0.4",
+        "@vue/cli-service": "3.0.4",
+        "eslint": "5.6.0",
+        "eslint-plugin-vue": "4.7.1",
+        "vue-template-compiler": "2.5.17"
+    },
+    "eslintConfig": {
+        "root": true,
+        "env": {
+            "node": true
+        },
+        "extends": [
+            "plugin:vue/essential",
+            "eslint:recommended"
+        ],
+        "rules": {},
+        "parserOptions": {
+            "parser": "babel-eslint"
+        }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
 }
